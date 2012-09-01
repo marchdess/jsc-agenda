@@ -1,0 +1,140 @@
+
+.divMese {
+	border: 0px solid #3d84cc;
+	padding: 5px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.tabMese {
+	border-collapse: collapse;
+	width: 100% !important;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+        border:0;
+}
+
+.tabMese caption {
+	padding: 2px;
+	background: #e6eff7 url(img/HeaderBg.gif) !important; 
+	white-space: nowrap;
+	font-weight: bold;
+	color: white !important;
+}
+
+.tabMese td {
+	border: 1px solid #3d84cc;
+	width: 14.28%;
+	height: 50px;
+	vertical-align:top;
+	padding: 2px;
+	background: transparent;	
+	color: #3d84cc;
+}
+
+.tabMese th {
+	width: 14.28%;
+	padding: 2px;
+	background-color: #f7f8fa !important;	
+	color: #3d84cc !important;	
+	font-weight: bold;
+	font-size: 100%;
+}
+.tabSettimana {
+	width: 80% !important;
+}
+
+.tabGiornoSettimana{
+	background-color: #e6eff7; color:#3d84cc;
+	font-size: 80%; 
+}
+.tabRiga{
+}
+.tabCellaGiornoVuoto {
+	border: 0 !important;
+}
+.tabCellaEvento{
+	background-color: #FFFFCC !important;
+	color: #000000;
+}
+
+.tabCellaFestivo{
+	background-color:#e6eff7 !important;
+}
+
+.tabCellaOggi {
+	border: 3px solid #3d84cc !important;
+}
+
+.tabGiorno{
+	font-weight: bold;
+	font-size: 80%;
+}
+.tabTitoloEvento{
+	display:inline;
+	font-size: 80%;
+	color:#0;
+}
+.tabEvento {
+	margin:0 0 2px 0;
+	font-weight:bold;
+	padding:0;
+}
+
+.linkevento:hover {
+	cursor: help;
+}
+
+.navigazioneMensile a, .navigazioneMensile img, img {
+	border:0;
+	text-decoration: none;
+}
+form {
+	display: inline;
+}
+.pulsante {
+	color: #336699;
+	border: solid 1px #336699;
+}
+.navigazioneCategorie, .navigazioneClassi {
+	padding-left: 20px;
+}
+.input {
+	vertical-align: top;
+}
+.input label {
+	text-align: right;
+	padding-right: 1em;
+}
+
+.pulsantiPeriodo {
+	display: block;
+	margin: 10px auto;
+}
+.pulsante A {
+	text-decoration: none !important;
+}
+
+input[readonly],textarea[readonly],select[disabled] {
+	color: black !important;
+	background-color:#ffffff;
+	border: none;
+	border-left: 1px solid #336699;
+	border-bottom: 1px solid #336699;
+}
+a {
+	background: transparent !important;
+}
+
+@media print{
+.navigazioneCategorie, .navigazioneClassi, .navigazioneMensile, #login{
+	display: none;
+}
+.tabMese caption {
+	border-bottom: 1px solid #3d84cc;
+}
+.nostampa {
+	display: none;
+}
+}

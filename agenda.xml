@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+ <name>Agenda</name>
+ <!-- The following elements are optional and free of formatting constraints -->
+ <creationDate>2011-01-03</creationDate>
+ <author>Marcello Dessolis</author>
+ <authorEmail>dessolis@gmail.com</authorEmail>
+ <copyright>Copyright Info</copyright>
+ <license>License Info</license>
+ <!--  The version string is recorded in the components table -->
+ <version>1.02</version>
+ <!-- The description is optional and defaults to the name -->
+ <description>Agenda Scolastica</description>
+ 
+ <!-- Site Main File Copy Section -->
+ <!-- Note the folder attribute: This attribute describes the folder
+      to copy FROM in the package to install therefore files copied
+      in this section are copied from /site/ in the package -->
+ <files>
+  <filename>controller.php</filename>
+  <filename>agenda.php</filename>
+  <filename>agenda.xml</filename>
+  <filename>index.html</filename>
+  <filename>calendario.css</filename>
+  <folder>views</folder>
+  <folder>img</folder>
+  <folder>models</folder>
+  <folder>tables</folder>
+  <folder>lib</folder>
+ </files>
+<administration>
+  <menu view="mensile">COM_AGENDA</menu>
+  <files>
+  <filename>agenda.xml</filename>
+  <filename>sql/install.eventi.sql</filename>
+  <filename>sql/uninstall.eventi.sql</filename>
+  </files>
+ 	<languages folder="language">
+		<language tag="en-GB">en-GB.com_agenda.sys.ini</language>
+		<language tag="en-GB">en-GB.com_agenda.menu.ini</language>
+		<language tag="en-GB">en-GB.com_agenda.ini</language>
+	</languages>
+</administration>
+        <install> <!-- Runs on install -->
+                <sql>
+                        <file driver="mysql" charset="utf8">sql/install.eventi.sql</file>
+                </sql>
+        </install>
+        <uninstall> <!-- Runs on uninstall -->
+                <sql>
+                        <file driver="mysql" charset="utf8">sql/uninstall.eventi.sql</file>
+                </sql>
+        </uninstall>
+        
+</install>
